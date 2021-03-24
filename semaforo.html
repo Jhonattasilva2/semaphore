@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáforo</title>
+</head>
+<style> 
+        .flex-container {
+            display:flex;
+           
+            margin-top: 30%;
+            margin: auto;
+            align-content: center;
+            align-items: center;
+            flex-wrap:wrap;
+            flex-direction: column;
+            background-color: black;
+            width: 250px;
+            height: 500px;
+            border-radius: 10%;
+            
+
+
+        }
+        .flex-container>div {
+            background-color: yellow;
+            align-self: center; 
+            width: 120px;
+            height: 120px;
+            margin: auto;
+            border-radius: 50%;    
+            
+        }
+
+        #um {
+            background-color: red;
+        }
+
+        #dois {
+            background-color: yellow;
+        }
+
+        #tres {
+            background-color: green;
+        }
+        
+        @media (max-width: 1000px) {
+            #um {
+                background-color: red;
+
+            }
+            #dois {
+                background-color: rgb(73, 73, 8);
+            }
+
+            #tres {
+                background-color: rgb(50, 88, 50);
+            }
+            
+        }
+
+        @media (max-width: 800px) {
+            #um {
+                background-color: rgb(71, 41, 41);
+            }
+            #dois {
+                background-color: yellow;
+            }
+
+            #tres {
+                background-color: rgb(42, 66, 42);
+            }
+            
+        }
+
+        @media (max-width: 600px) {
+            #um {
+                background-color: rgb(80, 43, 43);
+            }
+            #dois {
+                background-color:  rgb(116, 116, 4);
+            }
+
+            #tres {
+                background-color: green;
+            }
+            
+        }
+
+
+        body { 
+            text-align: center;
+            margin-top: 10%;
+            background-color: #ADD8E6;
+        }
+
+    
+</style>
+<body>
+    <div class="flex-container">
+        <div id="um"></div>
+        <div id="dois"></div>
+        <div id="tres"></div>
+
+    </div>    
+</body>
+</html>
